@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.avinash.parirakshit">
+
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/parirakshitoutlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/parirakshitoutlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".about"></activity>
+        <activity android:name=".FullScreen" />
+        <activity android:name=".FakeValut" />
+        <activity android:name=".createFakeVaultPassword" />
+        <activity android:name=".settings" />
+        <activity
+            android:name=".verifyUser"
+            android:noHistory="true" />
+        <activity
+            android:name=".forgetPin"
+            android:noHistory="true" />
+        <activity
+            android:name=".forgetPassword"
+            android:noHistory="true" />
+        <activity
+            android:name=".logInByPin"
+            android:noHistory="true" />
+        <activity
+            android:name=".logInByPassword"
+            android:noHistory="true" />
+        <activity
+            android:name=".securityQuestion"
+            android:noHistory="true" />
+        <activity
+            android:name=".createPin"
+            android:noHistory="false" />
+        <activity
+            android:name=".createPassword"
+            android:noHistory="false" />
+        <activity android:name=".fullImage" />
+        <activity android:name=".vault" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
